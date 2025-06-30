@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Texts That Drive Her Wild</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.75in;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            padding: 0;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #e91e63;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        
+        .header .subtitle {
+            color: #e91e63;
+            font-size: 1.3em;
+            margin: 15px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .intro {
+            background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .intro h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.6em;
+        }
+        
+        .intro p {
+            font-size: 1.1em;
+            margin: 0;
+            opacity: 0.95;
+        }
+        
+        .text-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border: 2px solid #fce4ec;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #fdfefe 0%, #f8f9fa 100%);
+            position: relative;
+        }
+        
+        .text-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #e91e63, #ad1457);
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .text-number {
+            background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+        
+        .text-title {
+            color: #2c3e50;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+        }
+        
+        .actual-text {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2em;
+            font-style: italic;
+            border: 3px solid #ef6c00;
+        }
+        
+        .actual-text h4 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .psychology-behind {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+        
+        .psychology-behind h4 {
+            color: #2980b9;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .when-to-use {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #27ae60;
+        }
+        
+        .when-to-use h4 {
+            color: #229954;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .variations {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #f39c12;
+        }
+        
+        .variations h4 {
+            color: #e67e22;
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .variations ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .variations li {
+            margin: 8px 0;
+            color: #2c3e50;
+            font-style: italic;
+        }
+        
+        .warning {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #e74c3c;
+        }
+        
+        .warning h4 {
+            color: #c0392b;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .expected-response {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #9c27b0;
+        }
+        
+        .expected-response h4 {
+            color: #7b1fa2;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .texting-quote {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        
+        .timing-guide {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border: 2px solid #dee2e6;
+        }
+        
+        .timing-guide h3 {
+            color: #2c3e50;
+            margin: 0 0 20px 0;
+            font-size: 1.4em;
+            text-align: center;
+        }
+        
+        .timing-rule {
+            background: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e91e63;
+        }
+        
+        .timing-rule h4 {
+            color: #e91e63;
+            margin: 0 0 8px 0;
+            font-size: 1.1em;
+        }
+        
+        .mistakes-box {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .mistakes-box h4 {
+            margin: 0 0 15px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .pro-tips {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .pro-tips h4 {
+            margin: 0 0 15px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 50px 0 30px 0;
+        }
+        
+        .cta-section h2 {
+            margin: 0 0 20px 0;
+            font-size: 1.8em;
+        }
+        
+        .cta-highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta-highlight a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        @media print {
+            body { font-size: 12pt; }
+            .text-section { page-break-inside: avoid; }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>5 Texts That Drive Her Wild</h1>
+            <div class="subtitle">Master the Art of Irresistible Texting</div>
+        </div>
+
+        <div class="intro">
+            <h2>📱 Text Your Way to Her Heart</h2>
+            <p>Most men send boring, predictable texts that kill attraction. These 5 messages create anticipation, curiosity, and desire. Use them wisely and watch how she responds.</p>
+        </div>
+
+        <div class="text-section">
+            <div class="text-number">1</div>
+            <h3 class="text-title">The Anticipation Builder</h3>
+            
+            <div class="actual-text">
+                <h4>💬 The Text</h4>
+                "Remind me to tell you next time I see you why I'm so attracted to you."
+            </div>
+
+            <div class="psychology-behind">
+                <h4>🧠 Psychology Behind It</h4>
+                <p>This text creates an open loop in her mind—she'll be thinking about what you're going to say until she sees you next. It also plants the seed that you're attracted to her for deeper reasons than just looks.</p>
+            </div>
+
+            <div class="when-to-use">
+                <h4>⏰ When to Use It</h4>
+                <p>Perfect after a great date or meaningful conversation. Use it when you genuinely feel attracted to her personality, intelligence, or something she did. Don't use it as your opening text.</p>
+            </div>
+
+            <div class="variations">
+                <h4>🔄 Variations</h4>
+                <ul>
+                    <li>"Remind me to tell you something when I see you that's going to make you smile."</li>
+                    <li>"I have something to tell you next time we meet that you're going to want to hear."</li>
+                    <li>"There's something about you that I need to tell you in person."</li>
+                </ul>
+            </div>
+
+            <div class="expected-response">
+                <h4>💭 Expected Response</h4>
+                <p>She'll likely respond with curiosity: "What is it?" or "Tell me now!" Don't give in. Say something like "It's better said in person" and suggest meeting up.</p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Don't Overuse</h4>
+                <p>This text loses its power if you use it repeatedly. Save it for moments when you genuinely have something meaningful to share.</p>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <div class="text-number">2</div>
+            <h3 class="text-title">The Memory Trigger</h3>
+            
+            <div class="actual-text">
+                <h4>💬 The Text</h4>
+                "I saw something today that reminded me of you..."
+            </div>
+
+            <div class="psychology-behind">
+                <h4>🧠 Psychology Behind It</h4>
+                <p>This shows she's on your mind even when you're apart. It creates curiosity about what reminded you of her and demonstrates that you pay attention to details about her personality.</p>
+            </div>
+
+            <div class="when-to-use">
+                <h4>⏰ When to Use It</h4>
+                <p>Use this when you genuinely see something that connects to an inside joke, her interests, or something she told you about. The key is authenticity—don't force it.</p>
+            </div>
+
+            <div class="variations">
+                <h4>🔄 Examples in Action</h4>
+                <ul>
+                    <li>"I saw a golden retriever playing in the park and remembered how your eyes light up when you talk about dogs..."</li>
+                    <li>"Heard someone laughing exactly like you do and it made me smile..."</li>
+                    <li>"Saw a girl reading [book she mentioned] and thought of our conversation about..."</li>
+                </ul>
+            </div>
+
+            <div class="expected-response">
+                <h4>💭 Expected Response</h4>
+                <p>She'll want to know what it was. Share the specific detail and why it reminded you of her. This shows you listen and remember what she tells you.</p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Make It Personal</h4>
+                <p>Don't be generic. "I saw a pretty flower" won't work. Reference something specific about her personality, interests, or shared experiences.</p>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <div class="text-number">3</div>
+            <h3 class="text-title">The Romantic Imagination</h3>
+            
+            <div class="actual-text">
+                <h4>💬 The Text</h4>
+                [Send her a song] "Now imagine me singing this to you."
+            </div>
+
+            <div class="psychology-behind">
+                <h4>🧠 Psychology Behind It</h4>
+                <p>This creates a romantic, intimate scenario in her mind. She'll listen to the song while imagining you singing it to her, creating a powerful emotional connection and fantasy.</p>
+            </div>
+
+            <div class="when-to-use">
+                <h4>⏰ When to Use It</h4>
+                <p>Best used when you're already building romantic tension. Choose a song that matches your relationship stage—sweet and romantic for early dating, more intimate for established relationships.</p>
+            </div>
+
+            <div class="variations">
+                <h4>🔄 Song Selection Guide</h4>
+                <ul>
+                    <li><strong>Early Dating:</strong> "Make You Feel My Love" by Bob Dylan</li>
+                    <li><strong>Building Romance:</strong> "Thinking Out Loud" by Ed Sheeran</li>
+                    <li><strong>Established Relationship:</strong> "All of Me" by John Legend</li>
+                    <li><strong>Playful Option:</strong> "Can't Help Myself" by The Four Tops</li>
+                </ul>
+            </div>
+
+            <div class="expected-response">
+                <h4>💭 Expected Response</h4>
+                <p>She'll likely listen to the song and respond emotionally. Common responses include "That's so sweet" or "I'm listening to it now and smiling." Follow up by asking what she thought of it.</p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Choose Wisely</h4>
+                <p>Don't send overly sexual or inappropriate songs early in dating. Match the song's intensity to your relationship stage.</p>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <div class="text-number">4</div>
+            <h3 class="text-title">The Vulnerability Hook</h3>
+            
+            <div class="actual-text">
+                <h4>💬 The Text</h4>
+                "Sometimes I ask myself how much better my life would be if I met you sooner."
+            </div>
+
+            <div class="psychology-behind">
+                <h4>🧠 Psychology Behind It</h4>
+                <p>This shows vulnerability and depth while implying she's had a significant positive impact on your life. It suggests you value her presence deeply and creates emotional intimacy.</p>
+            </div>
+
+            <div class="when-to-use">
+                <h4>⏰ When to Use It</h4>
+                <p>Save this for when you're in an established relationship or serious dating phase. Don't use this too early—it can come across as too intense for casual dating.</p>
+            </div>
+
+            <div class="variations">
+                <h4>🔄 Variations</h4>
+                <ul>
+                    <li>"I keep thinking about how different my life would be if our paths never crossed."</li>
+                    <li>"Sometimes I wonder what took the universe so long to bring you into my life."</li>
+                    <li>"I find myself grateful that we met when we did, but curious about all the time before."</li>
+                </ul>
+            </div>
+
+            <div class="expected-response">
+                <h4>💭 Expected Response</h4>
+                <p>This often triggers a deep, emotional response. She might share similar feelings or ask you to elaborate. Be prepared to follow up with genuine examples of how she's impacted your life.</p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Timing Is Everything</h4>
+                <p>This is a heavy text. Use it sparingly and only when you genuinely feel this way. Overuse will make you seem needy rather than romantic.</p>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <div class="text-number">5</div>
+            <h3 class="text-title">The Mind Reader</h3>
+            
+            <div class="actual-text">
+                <h4>💬 The Text</h4>
+                "What's the first word that comes to mind when you think of me?"
+            </div>
+
+            <div class="psychology-behind">
+                <h4>🧠 Psychology Behind It</h4>
+                <p>This forces her to think about you and then reveal her thoughts. It gives you valuable insight into how she sees you while making her consciously focus on your positive qualities.</p>
+            </div>
+
+            <div class="when-to-use">
+                <h4>⏰ When to Use It</h4>
+                <p>Great for any stage of dating when you want to gauge her interest level or restart a conversation. It works especially well when you haven't texted in a while.</p>
+            </div>
+
+            <div class="variations">
+                <h4>🔄 Variations</h4>
+                <ul>
+                    <li>"If you had to describe me in one word to your friends, what would it be?"</li>
+                    <li>"What's the most accurate word that describes how you see me?"</li>
+                    <li>"Close your eyes, think of me, and tell me the first word that pops up."</li>
+                </ul>
+            </div>
+
+            <div class="expected-response">
+                <h4>💭 Expected Response</h4>
+                <p>You'll get valuable feedback about her perception of you. Positive words mean you're on the right track. If it's negative or neutral, you might need to adjust your approach.</p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Be Ready for Any Answer</h4>
+                <p>Don't ask this question unless you're prepared to hear any response. If she says something you don't like, don't get defensive—use it as information to improve.</p>
+            </div>
+        </div>
+
+        <div class="texting-quote">
+            "The best texts don't just communicate—they create emotions, build anticipation, and deepen connection. Master these 5 texts and watch how differently she responds to you."
+        </div>
+
+        <div class="timing-guide">
+            <h3>⏰ Perfect Timing Guide</h3>
+            
+            <div class="timing-rule">
+                <h4>Morning Texts (9-11 AM)</h4>
+                <p>Use memory triggers (#2) or curiosity builders (#1) to start her day thinking about you.</p>
+            </div>
+            
+            <div class="timing-rule">
+                <h4>Afternoon Texts (2-4 PM)</h4>
+                <p>Perfect for the mind reader (#5) or song sharing (#3) when she has time to engage.</p>
+            </div>
+            
+            <div class="timing-rule">
+                <h4>Evening Texts (7-9 PM)</h4>
+                <p>Ideal for deeper, emotional texts (#4) when she's winding down and more reflective.</p>
+            </div>
+        </div>
+
+        <div class="mistakes-box">
+            <h4>🚫 Common Texting Mistakes to Avoid</h4>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li>Using these texts back-to-back without normal conversation</li>
+                <li>Sending the same text to multiple women</li>
+                <li>Being too intense too early in the relationship</li>
+                <li>Following up immediately if she doesn't respond</li>
+                <li>Using them when you don't genuinely mean them</li>
+            </ul>
+        </div>
+
+        <div class="pro-tips">
+            <h4>🏆 Pro Texting Tips</h4>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li>Always be genuine—authenticity beats clever every time</li>
+                <li>Match your texting style to your relationship stage</li>
+                <li>Pay attention to her response style and mirror it</li>
+                <li>Don't overtext—less is often more</li>
+                <li>Use these texts to complement, not replace, real conversation</li>
+            </ul>
+        </div>
+
+        <div class="cta-section">
+            <h2>Want to Learn How to Text Like a Pro?</h2>
+            <p>These 5 texts are just the beginning. There's an entire psychology behind texting that creates attraction, builds connection, and makes women eager to see you.</p>
+            
+            <div class="cta-highlight">
+                <a href="https://v3nhti7cf7p.typeform.com/to/X5Q11U0a">
+                    Schedule Your Free Texting Mastery Call
+                </a>
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 0.95em; opacity: 0.9;">
+                Let me show you the complete system for texting that creates irresistible attraction and keeps her constantly thinking about you.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>Remember: Great texting isn't about tricks or manipulation. It's about creating genuine connection and emotional experiences through words. Use these texts to enhance authentic relationships, not to manipulate.</p>
+        </div>
+    </div>
+</body>
+</html>
